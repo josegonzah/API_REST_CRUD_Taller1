@@ -11,9 +11,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UsuarioService {
+    //Servicios que permiten interactuar con la interfaz de usaurio
     @Autowired
     UsuarioRepository usuarioRepository;
-
     public ArrayList<UsuarioModel> obtenerUsuarios(){
         return (ArrayList<UsuarioModel>) usuarioRepository.findAll();
     }

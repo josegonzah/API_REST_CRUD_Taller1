@@ -5,10 +5,13 @@ import javax.persistence.*;
 @Entity
 @Table(name = "usuario")
 public class UsuarioModel {
+    //Conexion directa con la DB, tiene la capaciad de crear la base de datos
+    //Y manipularla
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true, nullable = false)
+    //Creacion de la tabla
     private Long id;
 
     private String nombre;

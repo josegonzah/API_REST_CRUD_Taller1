@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UsuarioRepository extends CrudRepository<UsuarioModel, Long> {
+    //Interfaz que conecta con el modelo
     public abstract ArrayList<UsuarioModel> findByPrioridad(Integer prioridad);
     public abstract ArrayList<UsuarioModel> findByEmail(String email);
 
